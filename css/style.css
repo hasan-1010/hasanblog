@@ -4,57 +4,48 @@ html{
 body{
 	font-family: 'Titillium Web', sans-serif;
 }
-
-.navbar{
-	background:rgba(23, 20, 20, 0.38);
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 /*--banner-section--*/
 .banner-section{
-	height: 100vh; background: url(../img/banner.jpg); 
+    background: url(../img/banner.jpg); 
 	background-position: center; 
 	background-size: cover; 
-	padding-top: 6%;
+	padding: 6% 0;
 }
-.banner-info {
+.banner-content {
     background:rgba(23, 20, 20, 0.58);
     margin-top: 4em;
 }
-.header-left {
+.right-content {
     padding: 3em;
 }
-.header-right {
+.left-content {
     padding: 3em;
 }
-ul.address-text {
-    padding: 0;
-}
-ul.address {
-    padding: 0;
-}
-.header-left img {
+.right-content img {
     width: 100%;
      margin-top: 19px;
 }
-.header-right {
-    padding-left: 3em;
-}
-.header-right h1 {
+
+.left-content h1 {
     font-size: 2.5em;
     color: #fff;
     margin: 0.5em 0 0;
     font-weight: bold;
 }
-.header-right h1 {
+.left-content h1 {
     font-size: 1.2em;
     color: #FFF;
-    background: #00a78e;
+    background: #199EB8;
     display: inline-block;
     padding: .5em 1.5em;
     position: relative;
 	    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	            box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.header-right h1:before {
+.left-content h1:before {
        width: 0;
     height: 0;
     position: absolute;
@@ -63,49 +54,23 @@ ul.address {
     left: 12px;
     border-style: solid;
     border-width: 14px 11px 0 12px;
-    border-color: #00a78e transparent transparent transparent;
+    border-color: #199EB8 transparent transparent transparent;
 }
 
-.header-right h6 {
-       font-size: 1em;
+.left-content h5,
+.left-content h6 {
     color: #C7C7C7;
     margin-top: 0.8em;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-ul.address {
-    margin-top: 2em;
-    border-top: 1px solid #AFAFAF;
-    padding-top: 0.5em;
-}
-ul.address li {
-    display: block;
-}
-ul.address li ul.address-text li {
-    display: inline-block;
+.left-content h6{
     font-size: 1em;
-    color: #fff;
-    margin-top: 1em;
-	font-weight: 400;
-}
-ul.address li ul.address-text li:nth-child(1){
-	width: 20%;
-}
-ul.address li ul.address-text li a {
-    color: #fff;
-	text-decoration:none;
-}
-ul.address li ul.address-text li a:hover{
-        color: #00a78e;
-}
-ul.address-text b {
-    color:#fff;
 }
 /*about*/
 #about {
     width: 100%;
     height: auto;
-    background: #f3f6fb;
     padding-top: 190px;
 }
 .paddsection {
@@ -136,11 +101,50 @@ ul.address-text b {
     margin-bottom: 0;
     text-align: left;
 }
+/*skills*/
+.skill-section{
+    padding: 5em 0 1em 0;
+    background: #6c757d1f;
+}
+.skill-item{
+    background: #fff;
+    margin-bottom: 1em;
+}
+.skill-item-logo{
+    border:1px solid #199EB8;
+    padding: 5px;
+    margin-right: 10px;
+}
+.skill-item-logo img{
+    width: 30px;
+}
+.skill-item h5{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #199EB8;
+    line-height: .7;
+}
+.skill-item p{
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+.skill-item .progress{
+    border-radius: 0;
+    height: 0.7rem;
+    border: 1px solid #199EB8;
+    background: #fff;
+}
+.skill-item .progress .progress-bar{
+    width: 50%;
+    background: #199EB8;
+}
+
 /*portfolio section*/
 .service-head h4 {
     font-size: 1.2em;
     color: #FFF;
-    background: #00a78e;
+    background: #199EB8;
     display: inline-block;
     padding: .5em 1.5em;
     position: relative;
@@ -156,7 +160,7 @@ ul.address-text b {
     left: 12px;
     border-style: solid;
     border-width: 14px 11px 0 12px;
-    border-color: #00a78e transparent transparent transparent;
+    border-color: #199EB8 transparent transparent transparent;
 }
 .service-head h3 {
     color: #1b242f;
@@ -182,7 +186,7 @@ span.border {
 span.border:after {
     content: ' ';
     position: absolute;
-    background: #00a78e;
+    background: #199EB8;
     height: 7px;
     display: block;
     width: 73px;
@@ -260,22 +264,22 @@ span.border:after {
             justify-content: center;
 }
 
-.portfolio-section .nav li a { 
+.portfolio-section .nav li a {
     margin: 5px;
-    padding: 10px 40px;
+    padding: 5px 20px;
     font-size: 16px;
-    color: #00a78e;
-    border: 2px solid #00a78e;
+    color: #199EB8;
+    border: 2px solid #199EB8;
     -webkit-transition-duration: 0.4s;
-         -o-transition-duration: 0.4s;
-            transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 .portfolio-section .nav a:hover { 
-    background:#00a78e;
+    background:#199EB8;
     color: #fff; 
 }
 .portfolio-section .nav .active { 
-    background-color:#00a78e !important;
+    background-color:#199EB8 !important;
     color:#fff;
 }
 
@@ -317,7 +321,7 @@ span.border:after {
 }
 .contact-grid1-left1 i {
     font-size: 1.5em;
-    color: #00a78e;
+    color: #199EB8;
 }
 .contact-grid1-left1 ul {
     padding: 0;
@@ -334,7 +338,7 @@ span.border:after {
     padding: 19px 10px;
     margin-bottom: 24px;
     outline: none;
-    border: 2px solid #00a78e;
+    border: 2px solid #199EB8;
 }
 .mail_right input[type="submit"] {
     border: none;
@@ -347,7 +351,7 @@ span.border:after {
  /*TEAM*/
  .team-section{
  	    padding: 5em 0 1em 0;
- 	    background: #f3f6fb;
+ 	    background: #6c757d1f;
  }
  .team-section .col-sm-3 {
     padding: 0;
@@ -530,11 +534,11 @@ span.border:after {
 
 /*media query*/
 /*@media (max-width: 767px){
-	.banner-info {
+	.banner-content {
 	    background: rgba(47, 44, 44, 0.58);
 	    margin-top: 3em;
 	}
-	.header-right {
+	.left-content {
 	    padding-left: 3em;
 	    float: left;
 	    width: 50%;
@@ -546,7 +550,7 @@ span.border:after {
 	}
 }
 @media (max-width: 600px){
-	.banner-info {
+	.banner-content {
 	    margin-top: 2em;
 	}
 	#about .div-img-bg .about-img img {
@@ -558,16 +562,16 @@ span.border:after {
 	.banner-section {
 	    padding-top: 11%;
 	}
-	.banner-info {
+	.banner-content {
 	    margin-top: 1.2em;
 	}
-	.header-right {
+	.left-content {
 	    padding-left: 0em;
 	    float: left;
 	    width: 100%;
 	    padding: 1em 1em 0em 1em;
 	}
-	.header-right h1 {
+	.left-content h1 {
 	    font-size: 1em;
 	    padding: .4em 1em;
 	}
